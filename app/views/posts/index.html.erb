@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Posts</h1>
+<a data-controller="offline" data-action="click->offline#download" data-offline-url-value="<%= posts_path %>">Cache all posts to use offline</a>
 
 <div id="posts">
   <% @posts.each do |post| %>
